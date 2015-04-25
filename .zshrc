@@ -72,7 +72,8 @@ zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 # プロンプトに色を付ける
 autoload -U colors; colors
 # 一般ユーザ時
-tmp_prompt="%{${fg[cyan]}%}%n@%m $ %{${reset_color}%}"
+tmp_prompt="%{${fg[cyan]}%}%n@%m:%~
+$ %{${reset_color}%}"
 tmp_prompt2="%{${fg[cyan]}%}%_> %{${reset_color}%}"
 tmp_rprompt="%{${fg[green]}%}[%~]%{${reset_color}%}"
 tmp_sprompt="%{${fg[yellow]}%}%r is correct? [Yes, No, Abort, Edit]:%{${reset_color}%}"
@@ -87,7 +88,7 @@ fi
 
 PROMPT=$tmp_prompt    # 通常のプロンプト
 PROMPT2=$tmp_prompt2  # セカンダリのプロンプト(コマンドが2行以上の時に表示される)
-RPROMPT=$tmp_rprompt  # 右側のプロンプト
+# RPROMPT=$tmp_rprompt  # 右側のプロンプト
 SPROMPT=$tmp_sprompt  # スペル訂正用プロンプト
 # SSHログイン時のプロンプト
 [ -n "${REMOTEHOST}${SSH_CONNECTION}" ] &&
