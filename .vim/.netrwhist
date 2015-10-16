@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/home/yuri/workspace/exp2/series_resonance'
+let g:netrw_dirhist_2='/home/yuri/workspace/exp2/series_resonance/repo'
+let g:netrw_dirhist_3='/home/yuri/workspace/exp2'
+let g:netrw_dirhist_4='/home/yuri/workspace/exp2/series_resonance'
+let g:netrw_dirhist_5='/home/yuri/workspace/exp2/series_resonance/repo'
+let g:netrw_dirhist_6='/home/yuri/workspace/Notebook/tex/maxwell'
+let g:netrw_dirhist_7='/home/yuri/Downloads/.emacs.d/elisp'
+let g:netrw_dirhist_8='/home/yuri/Documents/back'
+let g:netrw_dirhist_9='/home/yuri/texmf/tex/latex/mymacro'
