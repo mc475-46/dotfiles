@@ -1,8 +1,7 @@
-bufferlist.vim
 jellybeans.vim
 neobundle.vim
-neocomplcache
-seiya.vim
-vim-auto-save
-vim-powerline
-vimshell
+twilight
+vim-quickrun
+vim-railscasts-theme
+vim-slim
+vim-tomorrow-theme

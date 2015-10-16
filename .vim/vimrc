@@ -99,7 +99,6 @@ set completeopt=menu,preview,menuone " 補完表示設定
 
 source ~/.vim/vimrc.plugin        " プラグイン周り
 source ~/.vim/vimrc.local
-colorscheme jellybeans 
 
 
 au BufRead,BufNewFile *.html.ep  set filetype=html
