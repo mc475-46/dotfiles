@@ -125,10 +125,6 @@ alias v=vim
 alias ls='ls -a --color=auto'
 alias emacs='emacs -nw'
 
-# cdコマンド実行後、lsを実行する
-function cd() {
-  builtin cd $@ && ls;
-}
 
 # -------------------------------
 # Ruby on Rails関係
