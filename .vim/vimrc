@@ -19,7 +19,7 @@ set guifontwide=Ricty:h10 " こっちは日本語フォント
 let g:Powerline_symbols = 'fancy' " `fancy' テーマに切り替え
 
 " タブ周り
-set tabstop=4 shiftwidth=4 softtabstop=4
+set tabstop=2 shiftwidth=2 softtabstop=2
 set expandtab              " タブを空白文字に展開
 set autoindent smartindent " 自動インデント，スマートインデント
 
