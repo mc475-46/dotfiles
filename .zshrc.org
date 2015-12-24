@@ -109,7 +109,15 @@ esac
 # Other Settings
 # ------------------------------
 ### RVM ###
-if [[ -s ~/.rvm/scripts/rvm ]] ; then source ~/.rvm/scripts/rvm ; fi
+#if [[ -s ~/.rvm/scripts/rvm ]] ; then source ~/.rvm/scripts/rvm ; fi
+
+### rbenv ###
+#export PATH=$HOME/.rbenv/bin:$PATH
+#eval "$(rbenv init - zsh)"
+
+### nvm ###
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
 ### Macports ###
 case "${OSTYPE}" in
@@ -124,10 +132,3 @@ alias r=rails
 alias v=vim
 alias ls='ls -a --color=auto'
 alias emacs='emacs -nw'
-
-
-# -------------------------------
-# Ruby on Rails関係
-# -------------------------------
-export PATH=$HOME/.rbenv/bin:$PATH
-eval "$(rbenv init - zsh)"
