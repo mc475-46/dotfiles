@@ -16,6 +16,7 @@ NeoBundle 'nanotech/jellybeans.vim'
 NeoBundle 'chriskempson/vim-tomorrow-theme'
 NeoBundle 'jpo/vim-railscasts-theme'
 NeoBundle 'slim-template/vim-slim'
+NeoBundle 'scrooloose/syntastic'
 call neobundle#end()
 
 colorscheme railscasts
