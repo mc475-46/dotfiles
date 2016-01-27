@@ -19,6 +19,6 @@ NeoBundle 'slim-template/vim-slim'
 NeoBundle 'scrooloose/syntastic'
 call neobundle#end()
 
-colorscheme railscasts
+colorscheme twilight
 
 filetype plugin indent on
