@@ -1,5 +1,5 @@
 [user]
-	email = moto.n.mc.475.221@gmail.com
+	email = motoki.n.310@gmail.com
 	name = Motoki Nagano
 [color]
   ui = auto
@@ -7,6 +7,7 @@
   amend = commit --amend -C HEAD
   co = checkout
   cm = commit -m
+  cam = commit -am
   ps = push
   lga = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
   lgg = log --stat --decorate=short --pretty=format:'%C(yellow)%h %Cgreen%cr %Cblue%cn%Cred%d %Creset%s %C(cyan)%b'
@@ -16,3 +17,5 @@
   sync = !git checkout master && git pull origin master && git fetch -p origin && git branch -d $(git branch --merged | grep -v master | grep -v '*')
 [push]
 	default = current
+[pull]
+  default = current
