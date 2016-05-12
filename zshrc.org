@@ -118,6 +118,12 @@ if [ -e $HOME/.rbenv/ ]; then
   eval "$(rbenv init - zsh)"
 fi
 
+### ndenv ###
+if [ -e $HOME/.ndenv/ ]; then
+  export PATH=$HOME/.ndenv/bin:$PATH
+  eval "$(ndenv init - zsh)"
+fi
+
 ### nvm ###
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
