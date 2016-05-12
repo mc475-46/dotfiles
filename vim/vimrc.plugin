@@ -15,8 +15,10 @@ NeoBundle 'vim-scripts/twilight.git'
 NeoBundle 'nanotech/jellybeans.vim'
 NeoBundle 'chriskempson/vim-tomorrow-theme'
 NeoBundle 'jpo/vim-railscasts-theme'
-NeoBundle 'slim-template/vim-slim'
 NeoBundle 'scrooloose/syntastic'
+NeoBundle 'kannokanno/previm'
+NeoBundle 'plasticboy/vim-markdown'
+NeoBundle 'tyru/open-browser.vim'
 call neobundle#end()
 
 colorscheme twilight

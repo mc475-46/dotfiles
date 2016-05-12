@@ -1,2 +1,8 @@
 " au BufWrite *.py :!pep8 #1 2>&1
 let g:syntastic_python_checkers = ['pyflakes', 'pep8']
+
+" Previm
+augroup PrevimSettings
+  autocmd!
+  autocmd BufNewFile,BufRead *.{md,mdwn,mkd,mkdn,mark*} set filetype=markdown
+augroup END
