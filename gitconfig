@@ -1,6 +1,8 @@
 [user]
 	email = motoki.n.310@gmail.com
 	name = Motoki Nagano
+[core]
+  autocrlf = false
 [color]
   ui = auto
 [alias]
