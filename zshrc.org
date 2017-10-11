@@ -109,9 +109,6 @@ esac
 # ------------------------------
 # Other Settings
 # ------------------------------
-### RVM ###
-#if [[ -s ~/.rvm/scripts/rvm ]] ; then source ~/.rvm/scripts/rvm ; fi
-
 ### rbenv ###
 if [ -e $HOME/.rbenv/ ]; then
   export PATH=$HOME/.rbenv/bin:$PATH
@@ -127,14 +124,6 @@ fi
 ### nvm ###
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
-
-### Macports ###
-case "${OSTYPE}" in
-  darwin*)
-    export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-    export MANPATH=/opt/local/share/man:/opt/local/man:$MANPATH
-  ;;
-esac
 
 ### virtualenvwrapper ###
 if [ -e /usr/local/bin/virtualenvwrapper.sh ]; then
