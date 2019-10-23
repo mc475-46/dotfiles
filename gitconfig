@@ -1,6 +1,3 @@
-[user]
-	email = motoki.n.310@gmail.com
-	name = Motoki Nagano
 [core]
   autocrlf = false
 [color]
@@ -22,3 +19,5 @@
 	default = current
 [pull]
   default = current
+[include]
+  path = .gitconfig.local

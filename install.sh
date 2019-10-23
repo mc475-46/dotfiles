@@ -1,4 +1,7 @@
-SCRIPT_DIR=$(cd $(dirname $0); pwd)
+#!/bin/sh
+
+BASEDIR_RELATIVE=`dirname $0`
+SCRIPT_DIR=`cd $BASEDIR_RELATIVE; pwd`
 
 ln -s {$SCRIPT_DIR}/gemrc ~/.gemrc
 echo "Successfully generating .gemrc"
@@ -6,6 +9,14 @@ echo "Successfully generating .gemrc"
 ln -s {$SCRIPT_DIR}/gnuplot ~/.gnuplot
 echo "Successfully generating .gnuplot"
 
+echo "Generating .gitconfig"
+echo "[user]" > ~/.gitconfig.local
+/bin/echo -n "Input your Email on Git repository: "
+read email
+echo "  email = $email" >> ~/.gitconfig.local
+/bin/echo -n "Input your name on Git repository: "
+read name
+echo "  name = $name" >> ~/.gitconfig.local
 ln -s {$SCRIPT_DIR}/gitconfig ~/.gitconfig
 echo "Successfully generating .gitconfig"
 
