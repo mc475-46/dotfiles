@@ -118,5 +118,12 @@ fi
 ### Aliases ###
 alias r=rails
 alias v=vim
-alias ls='ls --color=auto'
+case ${OSTYPE} in
+  darwin*)
+    alias ls='ls -G'
+    ;;
+  linux*)
+    alias ls='ls --color=auto'
+    ;;
+esac
 alias emacs='emacs -nw'
