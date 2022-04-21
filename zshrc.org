@@ -127,3 +127,6 @@ case ${OSTYPE} in
     ;;
 esac
 alias emacs='emacs -nw'
+
+# Include local settings
+[ -f ~/.zshrc.local ] && source ~/.zshrc.local
